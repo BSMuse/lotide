@@ -11,5 +11,3 @@ const middle = (array) => {
     return array.slice(middleIndex, middleIndex + 1);
   }
 }
-
-console.log(middle([1,2,3]))
