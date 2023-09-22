@@ -11,7 +11,7 @@ const eqArrays = (array1, array2) => {
       }
     }
     return answer;
-} 
+};
 
 const assertArraysEqual = () => {
   if (answer === true) {
