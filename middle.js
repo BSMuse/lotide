@@ -1,4 +1,3 @@
-
 const middle = (array) => {
   if (array.length < 3) {
     return [];
@@ -10,4 +9,6 @@ const middle = (array) => {
     const middleIndex = Math.floor(array.length / 2);
     return array.slice(middleIndex, middleIndex + 1);
   }
-}
+} 
+
+module.exports = middle;
