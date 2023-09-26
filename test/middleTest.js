@@ -1,7 +1,13 @@
-const eqArrays = require('../eqArrays') 
+const assert = require('chai').assert;
 const middle = require('../middle') 
-const assertArraysEqual = require('../assertArraysEqual')
 
+describe("#head", () => {
+  it("returns [lol] for [test, lol, this]", () => {
+    assert.deepEqual(middle(['test','lol','this']),['lol']);
+  });
 
-assertArraysEqual(eqArrays(middle([5,6,7]),[6]));
-assertArraysEqual(eqArrays(middle(["Hello", "Lighthouse", "Labs", "Test"]), ["Lighthouse", "Labs"]));
+  it("returns [6] for [5,6,7]", () => {
+    assert.deepEqual(middle([5,6,7]),[6]); 
+  });
+});
+
